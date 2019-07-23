@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [extent report]">
+  <listeners>
+    <listener class-name="Reports.Listeners"/>
+  </listeners>
+  <test name="login test">
+    <classes>
+      <class name="Reports.Logintest"/>
+    </classes>
+  </test> <!-- login test -->
+  <test name="login test(failed)">
+    <classes>
+      <class name="Reports.Logintest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="loginTest"/>
+          <include name="captureScreen"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Reports.Logintest -->
+    </classes>
+  </test> <!-- login test(failed) -->
+</suite> <!-- Failed suite [extent report] -->
