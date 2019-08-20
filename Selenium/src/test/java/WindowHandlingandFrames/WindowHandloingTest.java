@@ -5,6 +5,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WindowHandloingTest
@@ -12,8 +13,8 @@ public class WindowHandloingTest
 	public static void main(String[] args) throws InterruptedException
 	{
 		
-		System.setProperty("webdriver.gecko.driver", "C:/Users/sreddyb/Desktop/Automation/Test_Selenium/Drivers/chromedriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		//Enter the URL
 		driver.get("http://dev32.na.pfsweb.demandware.net/s/PREVAIL/en_US/sleeveless-scoop-neck-shell/25518916.html?dwvar_25518916_color=JJBF5XX&cgid=womens-clothing");
 		

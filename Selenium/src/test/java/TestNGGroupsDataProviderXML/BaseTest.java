@@ -1,4 +1,4 @@
-package Training.src.TestNGGroupsDataProviderXML;
+package TestNGGroupsDataProviderXML;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

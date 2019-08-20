@@ -12,7 +12,7 @@ public class GoogleTest {
 	@BeforeMethod()
 	public void setUp()
 	{
-		System.setProperty("webdriver.chrome.driver", "F://sravana//Ecom_Selenium_Project//Java_Practice//drivers//chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\chromedriver.exe");	
 		 driver=new ChromeDriver();
 		 driver.manage().window().maximize();
 		// driver.manage().deleteAllCookies();

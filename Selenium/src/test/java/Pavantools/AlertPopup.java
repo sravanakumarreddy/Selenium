@@ -23,7 +23,7 @@ public class AlertPopup {
 	public void Navigate_forward_back() throws InterruptedException, IOException {
 
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\sravanakumarr_b\\Desktop\\Softwares\\Selenium\\Selenium\\Drivers\\chromedriver.exe");
+				"C:/Users/sravanakumarr_b/git/Selenium/Selenium/Drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
