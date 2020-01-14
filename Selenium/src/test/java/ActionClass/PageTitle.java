@@ -18,15 +18,15 @@ public class PageTitle
 	@Test
 	public void pageTitle()
 	{
-		System.out.println("start");
-		System.setProperty("webdriver.gecko.driver", "F://sravana//Ecom_Selenium_Project//Java_Practice//drivers//geckodriver.exe");
-		WebDriver driver=new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+
 		driver.get("https://www.facebook.com");
 		
 		String title=driver.getTitle();
 		System.out.println(title);
 		
-		Assert.assertTrue(title.contains("Facebook – log in or sign up"));
+		Assert.assertTrue(title.contains("Facebook ï¿½ log in or sign up"));
 	  
 	}
 

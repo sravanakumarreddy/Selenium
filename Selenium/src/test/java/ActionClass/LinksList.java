@@ -15,9 +15,10 @@ public class LinksList
 	public static void main(String[] args)
 	
 	{
-		System.out.println("start");
-		System.setProperty("webdriver.gecko.driver", "F://sravana//Ecom_Selenium_Project//Java_Practice//drivers//geckodriver.exe");
-		WebDriver driver=new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+
+		
 		driver.get("https://www.facebook.com");
 		
 	   List <WebElement> Linkslist= driver.findElements(By.tagName("a"));

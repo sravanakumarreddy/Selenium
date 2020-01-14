@@ -12,8 +12,9 @@ public class WindowHandloingTest
 	public static void main(String[] args) throws InterruptedException
 	{
 		
-		System.setProperty("webdriver.gecko.driver", "F:/sravana/Ecom_Selenium_Project/Java_Practice/drivers/geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+
 		//Enter the URL
 		driver.get("http://dev32.na.pfsweb.demandware.net/s/PREVAIL/en_US/sleeveless-scoop-neck-shell/25518916.html?dwvar_25518916_color=JJBF5XX&cgid=womens-clothing");
 		

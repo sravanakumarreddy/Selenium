@@ -11,8 +11,9 @@ public class MouseRightClick {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriver driver=new FirefoxDriver();
-		driver.get("https://www.google.co.in/");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+
 		Thread.sleep(200);
 		
 		driver.manage().window().maximize();

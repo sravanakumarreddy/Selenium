@@ -11,8 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 public class HandlingSliderObject {
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.firefox.marionette","C://Program Files/eclipse/geckodriver-v0.9.0-win64/geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+
 		driver.get("https://jqueryui.com/slider/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -24,6 +25,8 @@ public class HandlingSliderObject {
 		
 		WebElement slider = driver.findElement(By.xpath("//*[@id='slider']/span"));
 		Actions action = new Actions(driver);
-		action.moveToElement(slider).dragAndDropBy(slider, 100, 0).build().perform();
+		action.moveToElement(slider).dragAndDropBy(slider, 50, 0).build().perform();
+		
+		
 	}
 }

@@ -21,10 +21,10 @@ public class HeadLessFirefox {
 			FirefoxOptions options=new FirefoxOptions();
 			options.setHeadless(true);
 			
-			WebDriver driver =new FirefoxDriver(options);
+			WebDriver driver1 =new FirefoxDriver(options);
 			
-			 driver.get("https://www.seleniumeasy.com/selenium-webdriver-tutorials");
-			  System.out.println("Page tile : "+driver.getTitle());
+			 driver1.get("https://www.seleniumeasy.com/selenium-webdriver-tutorials");
+			  System.out.println("Page tile : "+driver1.getTitle());
 			
 		  
 	}

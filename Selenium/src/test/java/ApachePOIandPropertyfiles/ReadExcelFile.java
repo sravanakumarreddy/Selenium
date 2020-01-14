@@ -1,4 +1,4 @@
-package Training.src.ApachePOIandPropertyfiles;
+package ApachePOIandPropertyfiles;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,7 +20,7 @@ public class ReadExcelFile
 	public static void main(String[] args) throws IOException, EncryptedDocumentException, InvalidFormatException 
 	{
 		
-		File file = new File("src/demo1/Demo1.xlsx");
+		File file = new File("C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\src\\test\\java\\ApachePOIandPropertyfiles\\Service Assurance Checklist.xlsx");
 		FileInputStream fis = new FileInputStream(file);
 		
 		XSSFWorkbook wb = new XSSFWorkbook(fis);

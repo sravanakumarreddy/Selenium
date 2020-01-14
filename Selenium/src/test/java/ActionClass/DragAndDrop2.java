@@ -13,10 +13,9 @@ public class DragAndDrop2 {
  
 public static void main(String[] args) throws InterruptedException {
 
-	System.setProperty("webdriver.firefox.marionette",
-			"/Java_Practice/drivers/geckodriver.exe");
-	
-WebDriver driver = new FirefoxDriver();
+	System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+	 WebDriver driver = new FirefoxDriver();
+
  
 
 driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");

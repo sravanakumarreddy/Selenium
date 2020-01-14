@@ -3,6 +3,7 @@ package Authentication;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class AuthenticationPopus {
@@ -10,10 +11,11 @@ public class AuthenticationPopus {
 	@Test
 	void demo312()
 	{
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\sravanakumarr_b\\Desktop\\Softwares\\Selenium\\Selenium\\Drivers\\chromedriver.exe");
-		
-		WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+		 
+
+
 		
 		//driver.get("http://the-internet.herokuapp.com/basic_auth");
 		

@@ -5,17 +5,17 @@ import org.testng.annotations.Test;
  
 public class TestRetry {
  
-	/*@Test(retryAnalyzer = Analyzer.RetryAnalyzer.class)
+	@Test(retryAnalyzer = Analyzer.RetryAnalyzer.class)
 
 	public void Test1()
 	{
 		Assert.assertEquals(false, true);
 	}
-*/ 
+ 
 	@Test
 	public void Test2()
 	{
-		Assert.assertEquals(false, true);
+		Assert.assertEquals(true, true);
 	}
 	
 	@Test

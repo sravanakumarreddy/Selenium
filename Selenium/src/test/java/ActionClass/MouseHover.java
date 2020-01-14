@@ -11,9 +11,9 @@ public class MouseHover {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.firefox.marionette","C://Program Files/eclipse/geckodriver-v0.9.0-win64/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
 
-		WebDriver driver=new FirefoxDriver();
 		driver.get("https://www.google.co.in/");
 		Thread.sleep(200);
 		

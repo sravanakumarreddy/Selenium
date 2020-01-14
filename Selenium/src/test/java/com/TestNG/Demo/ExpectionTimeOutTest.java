@@ -3,7 +3,7 @@ package com.TestNG.Demo;
 import org.testng.annotations.Test;
 
 public class ExpectionTimeOutTest {
-	/*@Test(invocationTimeOut=1,expectedExceptions=NumberFormatException.class)
+	@Test(invocationTimeOut=1,expectedExceptions=NumberFormatException.class)
 	void timeOutTest()
 	{
 		int i=0;
@@ -11,7 +11,7 @@ public class ExpectionTimeOutTest {
 		{
 			System.out.println(i);
 		}
-	}*/
+	}
 	
 	@Test(expectedExceptions=NumberFormatException.class)
 	void test1()

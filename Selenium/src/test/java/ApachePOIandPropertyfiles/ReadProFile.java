@@ -1,4 +1,4 @@
-package Training.src.ApachePOIandPropertyfiles;
+package ApachePOIandPropertyfiles;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -3,6 +3,7 @@ package com.Parameters.test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.Parameters;
 public class ParametersTest {
@@ -13,8 +14,10 @@ public class ParametersTest {
 	@Parameters({"url", "emailId" })
 	public void yahooLogoin(String url,String emailId)
 	{
-		System.setProperty("webdriver.chrome.driver", "F://sravana//Ecom_Selenium_Project//Java_Practice//drivers//chromedriver.exe");	
-		 driver=new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+
+		
 		 driver.manage().window().maximize();
 		// driver.manage().deleteAllCookies();
 		// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);

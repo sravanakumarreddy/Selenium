@@ -6,21 +6,23 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WindowHandles {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		//Enter the URL
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+				//Enter the URL
 		driver.get("http://demo.automationtesting.in/Windows.html");
 		
 		driver.getTitle();
 		driver.findElement(By.xpath("//*[@id=\"Tabbed\"]/a/button")).click();
 		
 		
-Set<String> allRef = driver.getWindowHandles();
+       Set<String> allRef = driver.getWindowHandles();
 		
 		Iterator<String> itr = allRef.iterator();
 		
@@ -37,20 +39,10 @@ Set<String> allRef = driver.getWindowHandles();
 		System.out.println("childUrl:- "+ childUrl);
 		
 		driver.switchTo().window(parentRefVal);
+		String parenttitle=driver.getTitle();
+		System.out.println("parent ref url : "+parenttitle);
 		
 	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	
 	}

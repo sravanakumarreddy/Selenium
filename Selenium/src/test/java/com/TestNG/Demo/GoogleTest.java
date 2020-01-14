@@ -3,6 +3,7 @@ package com.TestNG.Demo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -12,8 +13,9 @@ public class GoogleTest {
 	@BeforeMethod()
 	public void setUp()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\chromedriver.exe");	
-		 driver=new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
+
 		 driver.manage().window().maximize();
 		// driver.manage().deleteAllCookies();
 		// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);

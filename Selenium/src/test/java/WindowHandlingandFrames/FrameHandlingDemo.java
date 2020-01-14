@@ -1,4 +1,4 @@
-package Training.src.WindowHandlingandFrames;
+package WindowHandlingandFrames;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,9 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FrameHandlingDemo
 {
-	public static void main(String[] args) throws InterruptedException
+	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "F:/sravana/Ecom_Selenium_Project/Java_Practice/drivers/chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\chromedriver.exe");	
 		WebDriver driver = new ChromeDriver(); //launch chrome
 		//Enter the URL
 		driver.get("https://development-uk-fragrancedirect.demandware.net/");

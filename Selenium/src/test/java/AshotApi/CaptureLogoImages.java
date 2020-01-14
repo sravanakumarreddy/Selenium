@@ -26,12 +26,12 @@ public class CaptureLogoImages {
 
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
-		WebElement logoImageElement=driver.findElement(By.xpath("//*[@id=\"divLogo\"]/img"));
+		WebElement logoImageElement=driver.findElement(By.xpath("//div[@id='divLogo']"));
 		
 		Screenshot logoImageScreenshot=new AShot().takeScreenshot(driver, logoImageElement);
-		ImageIO.write(logoImageScreenshot.getImage(), "png", new File("C:\\Users\\sravanakumarr_b\\Desktop\\Softwares\\Screenshots\\orangehrmlLogo.png"));
+		ImageIO.write(logoImageScreenshot.getImage(), "png", new File("C:\\Users\\sravanakumarr_b\\Desktop\\Desktop_Data_18-06-2019\\Softwares\\Selenium_ss"));
 		
-		File fs=new File("C:\\Users\\sravanakumarr_b\\Desktop\\Softwares\\Screenshots");
+		File fs=new File("C:\\Users\\sravanakumarr_b\\Desktop\\Desktop_Data_18-06-2019\\Softwares\\Screenshots");
 		
 		if(fs.exists())
 		{

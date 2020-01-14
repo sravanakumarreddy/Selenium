@@ -11,7 +11,9 @@ public class UnderLine {
 
 			 public static void main(String[] args) {
 
-			 WebDriver driver = new FirefoxDriver();
+				 System.setProperty("webdriver.gecko.driver", "C:\\Users\\sravanakumarr_b\\git\\Selenium\\Selenium\\Drivers\\geckodriver.exe");
+				 WebDriver driver = new FirefoxDriver();
+
 
 			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
